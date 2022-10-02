@@ -1,0 +1,62 @@
+@font-face {
+    font-family: ochobit;
+    src: url(../fonts/ocho-bits.TTF);
+}
+
+*{
+    font-family: ochobit;
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    /* La unidad fr representa una fraccion del espaccio del contenedor de la cuadricula y el grid es para crear un escenario cuadriculado*/
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver{
+    display: none;
+    /* No se va a mostrar al inicio */
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    /* Lo que hace esta propiedad es que va a repartir proporcionalmente los elementos de caja (div, secion, article) de manera espaciada en toda la pagina*/
+    margin-top: 10px;
+}
+
+#start{
+    background-color: #f35a69;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+#scoreBoard{
+    display: inline-flex;
+}
+
+.square{
+    aspect-ratio: 1;
+}
+
+/* ASPECTO DE LOS CUADRADOS */
+.emptySquare {
+    background-color: #fcba03;
+}
+
+.snakeSquare{
+    background-color: #a59e9e;
+}
+
+.foodSquare{
+    background-color: #0fff77;
+}

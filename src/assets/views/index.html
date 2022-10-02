@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bulma/css/bulma.css">
+    <script src="../js/scriptIndex.js" defer></script>
+    <title>Incio de Sesion</title>
+</head>
+<body>
+    <div class="section">
+        <h1 class="title is-1">HGAMES</h1>
+        <p class="subtitle is-5">Donde tus juegos nacen.</p>
+
+        <!-- DIV USUARIO -->
+        <div class="field">
+            <p class="control has-icons-left has-icons-right">
+            <input id="txtUsuario" class="input" type="text" placeholder="Usuario">
+            <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+            </span>
+            </p>
+        </div>
+        
+        <!-- DIV CONTRASEÑA -->
+        <div class="field">
+            <p class="control has-icons-left">
+            <input id="txtContraseña" class="input" type="password" placeholder="Contraseña">
+            <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+            </span>
+            </p>
+        </div>
+
+        <!-- DIV BOTON -->
+             <p class="control">
+                <button onclick="iniciarSesion()" class="button is-success">
+                    Inciar sesion
+                </button>
+            </p>
+
+            <br>
+            <br>
+
+            <p class="control">
+                <button onclick="irRegistro()" class="button is-warning">
+                    Registrate aqui
+                </button>
+            </p>
+        
+    </div>
+</body>
+</html>
